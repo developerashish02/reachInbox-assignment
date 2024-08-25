@@ -8,7 +8,7 @@ export const authApiSlice = createApi({
   endpoints: (builder) => ({
     googleLogin: builder.mutation({
       query: (redirectTo) => ({
-        url: `/google-login`,
+        url: `google-login`,
         method: "GET",
         params: {
           redirect_to: redirectTo,
